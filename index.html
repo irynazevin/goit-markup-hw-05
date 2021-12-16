@@ -113,44 +113,35 @@
     </main>
 
         <section class="works-section">
-        <div class="container">
-            <h2 class="work-heading">Чем мы занимаемся</h2>
-            <ul class="work-heading-ul">
-                <li class="work-heading-li1">
-                    <img src="images/1.jpg "
-                     alt="человек печатает"
-                     width="370" 
-                     height="294"/>
-                     <div class="works-animation">
-                         <p class="works-animation-titlt">
-                             Десктопные приложения
-                         </p>
-                     </div>
-                </li>
-                <li class="work-heading-li2">
-                    <img src="images/2.jpg" 
-                    alt="Человек держит в руке телефон"
-                     width="370" 
-                    height="294"/>
-                    <div class="works-animation">
-                        <p class="works-animation-titlt">
-                            Мобильные приложения
-                        </p>
-                    </div>
-                </li>
-                <li class="work-heading-li3">
-                    <img src="images/3.jpg"
-                     alt="Планшет с изображением"
-                      width="370" 
-                     height="294"/>
-                    <div class="works-animation">
-                        <p class="works-animation-titlt">
-                            Дизайнерские решения
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+            <div class="container">
+                <h2 class="work-heading">Чем мы занимаемся</h2>
+                <ul class="work-heading-ul">
+                    <li class="work-heading-li">
+                        <img src="images/1.jpg " alt="человек печатает" width="370" height="294" />
+                        <div class="works-animation">
+                            <p class="works-animation-titlt">
+                                Десктопные приложения
+                            </p>
+                        </div>
+                    </li>
+                    <li class="work-heading-li">
+                        <img src="images/2.jpg" alt="Человек держит в руке телефон" width="370" height="294" />
+                        <div class="works-animation">
+                            <p class="works-animation-titlt">
+                                Мобильные приложения
+                            </p>
+                        </div>
+                    </li>
+                    <li class="work-heading-li">
+                        <img src="images/3.jpg" alt="Планшет с изображением" width="370" height="294" />
+                        <div class="works-animation">
+                            <p class="works-animation-titlt">
+                                Дизайнерские решения
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     
     <section class="command-section">
@@ -485,9 +476,38 @@
             </svg>
 
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#" class="modal-form">
+            <input
+             type="text" 
+             class="modal-input" 
+             placeholder="Имя"
+             name="user-name"/>
+
+            <input
+             type="text" 
+             class="modal-input"
+             placeholder="Телефон"
+             name="user-tel"/>
+
+            <input
+             type="text" 
+             class="modal-input"
+             placeholder="Почта"
+             name="user-mail"/>
+
+            <input type="text" 
+            class="modal-input-last"
+             placeholder="Комментарий"
+             name="user-coment"/>
+
+            <button type="submit">Отправить</button>
+           
+        </form>
 
     </div>
-    <script src="./js/modal.js"></script>
+    
 </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>

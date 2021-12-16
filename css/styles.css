@@ -70,6 +70,7 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 .header-link.curent::after {
   content: '';
@@ -79,6 +80,8 @@ body {
   border-radius: 2px;
   background-color: #2196f3;
   position: absolute;
+  left: 0;
+  bottom: -32px;
 }
 
 .header-item-st {
@@ -236,7 +239,7 @@ body {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  transition-property: color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -320,14 +323,13 @@ body {
 .work-heading-ul {
   display: flex;
 }
-.work-heading-li1,
-.work-heading-li2 {
+.work-heading-li {
   margin-right: 30px;
-}
-.work-heading-li1,
-.work-heading-li2,
-.work-heading-li3 {
   position: relative;
+}
+
+.work-heading-li3:last-child {
+  margin-right: 0;
 }
 .works-animation {
   position: absolute;
@@ -442,7 +444,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #2196f3;
 }
 .masters-social-icon {
@@ -481,8 +484,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   margin-bottom: 20px;
 }
 .footer-right {
@@ -551,19 +554,19 @@ body {
 
 .portfolio-text {
   position: absolute;
+  height: 100%;
   top: 0;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.56px;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
   padding-top: 63px;
   padding-bottom: 63px;
   padding-left: 24px;
   padding-right: 24px;
-  line-height: 1.5;
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -625,7 +628,7 @@ body {
 .clients-heading {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.16px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -643,7 +646,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .clients-item + .clients-item {
@@ -696,6 +698,7 @@ body {
   background: #ffffff;
   border-radius: 5px;
   position: relative;
+  padding: 40px;
 }
 .modal-close-btn {
   width: 30px;
@@ -712,4 +715,34 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.modal-title {
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 20px;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 12px;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 28px;
+}
+.modal-input-last {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 28px;
+  padding-left: 15px;
+}
+.modal-input::placeholder {
+  color: #757575;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16px;
+  letter-spacing: 0.01em;
 }
